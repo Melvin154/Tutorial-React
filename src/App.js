@@ -2,14 +2,22 @@
 import './App.css';
 import Day from './components/day';
 import Date from './components/date';
+import Car from './components/car';
 
 function App() {
+
+  
+  const brand="Mercedz Benz"  //Car component props
+  const Color="Red"  //car componet props
+  const carInfo={brand:"Ferrari",Color:"Black"}
+
+
   return (
     <>
-   <h1>Hello Melvin</h1>
-   <h3>Good Morning NEW YORKERR......</h3>
-   <Day/>
-   <Date/>
+   <p>Hello Melvin Thomas.<Day/><Date/></p>
+   <p>Good Morning NEW YORKERR......</p>
+   <Car brand={brand} Color={Color}  carInfo={carInfo}/>    {/* (before <-=)  here we choose any name like brand,carCompany etcc......... */}
+   
    </>
   );
 }

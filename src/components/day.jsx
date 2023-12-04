@@ -1,8 +1,10 @@
 import React from 'react'
 
 const Day = () => {
+  
+
   return (
-    <h1> Today is Monday</h1>
+    <p> Today is Monday</p>
   )
 }
 
