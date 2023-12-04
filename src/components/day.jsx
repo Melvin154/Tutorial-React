@@ -2,7 +2,7 @@ import React from 'react'
 
 const Day = () => {
   return (
-    <div> Today is Sunday</div>
+    <h1> Today is Monday</h1>
   )
 }
 
