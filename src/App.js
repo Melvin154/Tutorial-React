@@ -12,12 +12,15 @@ function App() {
   const carInfo={brand:"Ferrari",Color:"Black"}
 
 
+  const dateInfo={month:"December",week:"2"}
+
+
   return (
     <>
    <p>Hello Melvin Thomas.<Day/><Date/></p>
    <p>Good Morning NEW YORKERR......</p>
    <Car brand={brand} Color={Color}  carInfo={carInfo}/>    {/* (before <-=)  here we choose any name like brand,carCompany etcc......... */}
-   
+   <Date dateInfo={dateInfo}/>
    </>
   );
 }
