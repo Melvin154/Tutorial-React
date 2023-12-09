@@ -1,6 +1,5 @@
 
 import './App.css';
-import Day from './components/day';
 import Car from './components/car';
 
 import Apple from './components/Apple';
@@ -8,9 +7,7 @@ import Apple from './components/Apple';
 function App() {
 
   
-  const brand="Mercedz Benz"  //Car component props
-  const Color="Red"  //car componet props
-  const carInfo={brand:"Ferrari",Color:"Black"}
+  const carInfo={brand:"Ferrari",color:"Red"}
 
 
 
@@ -19,11 +16,20 @@ function App() {
 
   return (
     <>
-   <p>Hello Melvin Thomas.<Day/></p>
+   <p>Hello Melvin Thomas.</p>
    <p>Good Morning NEW YORKERR......</p>
-   <Car brand={brand} Color={Color}  carInfo={carInfo}/>    {/* (before <-=)  here we choose any name like brand,carCompany etcc......... */}
-   {/* <Date dateInfo={dateInfo}/> */}
+
+
+
+{carInfo.brand!==undefined && carInfo.color!==undefined ? <Car carInfo={carInfo}/>    :null}
+
+
+
+   
    <Apple appleInfo={appleInfo}/>
+
+
+
    </>
   );
 }
